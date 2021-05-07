@@ -828,7 +828,10 @@ rule137 :: ConversionRule
 rule137 = ConversionRule { category: gencatLU, unicodeCat: NUMCAT_LU, possible: 1, updist: 0, lowdist: -3008, titledist: 0 }
 
 allchars :: Array CharBlock
-allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
+allchars = allChars1 <> allChars2 <> allChars3 <> allChars4 <> allChars5 <> allChars6 <> allChars7 <> allChars8 <> allChars9 <> allChars10 <> allChars11 <> allChars12
+
+allChars1 :: Array CharBlock
+allChars1 = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 32, length: 1, convRule: rule1 }
            , CharBlock { start: 33, length: 3, convRule: rule2 }
            , CharBlock { start: 36, length: 1, convRule: rule3 }
@@ -1028,7 +1031,10 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 391, length: 1, convRule: rule22 }
            , CharBlock { start: 392, length: 1, convRule: rule23 }
            , CharBlock { start: 393, length: 2, convRule: rule31 }
-           , CharBlock { start: 395, length: 1, convRule: rule22 }
+           ]
+
+allChars2 :: Array CharBlock
+allChars2 = [ CharBlock { start: 395, length: 1, convRule: rule22 }
            , CharBlock { start: 396, length: 1, convRule: rule23 }
            , CharBlock { start: 397, length: 1, convRule: rule20 }
            , CharBlock { start: 398, length: 1, convRule: rule32 }
@@ -1228,7 +1234,9 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 604, length: 1, convRule: rule69 }
            , CharBlock { start: 605, length: 3, convRule: rule20 }
            , CharBlock { start: 608, length: 1, convRule: rule66 }
-           , CharBlock { start: 609, length: 1, convRule: rule70 }
+           ]
+allChars3 :: Array CharBlock
+allChars3 = [ CharBlock { start: 609, length: 1, convRule: rule70 }
            , CharBlock { start: 610, length: 1, convRule: rule20 }
            , CharBlock { start: 611, length: 1, convRule: rule71 }
            , CharBlock { start: 612, length: 1, convRule: rule20 }
@@ -1428,7 +1436,9 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 1191, length: 1, convRule: rule23 }
            , CharBlock { start: 1192, length: 1, convRule: rule22 }
            , CharBlock { start: 1193, length: 1, convRule: rule23 }
-           , CharBlock { start: 1194, length: 1, convRule: rule22 }
+           ]
+allChars4 :: Array CharBlock
+allChars4 = [ CharBlock { start: 1194, length: 1, convRule: rule22 }
            , CharBlock { start: 1195, length: 1, convRule: rule23 }
            , CharBlock { start: 1196, length: 1, convRule: rule22 }
            , CharBlock { start: 1197, length: 1, convRule: rule23 }
@@ -1628,7 +1638,10 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 1958, length: 11, convRule: rule92 }
            , CharBlock { start: 1969, length: 1, convRule: rule14 }
            , CharBlock { start: 1984, length: 10, convRule: rule8 }
-           , CharBlock { start: 1994, length: 33, convRule: rule14 }
+           ]
+
+allChars5 :: Array CharBlock
+allChars5 = [ CharBlock { start: 1994, length: 33, convRule: rule14 }
            , CharBlock { start: 2027, length: 9, convRule: rule92 }
            , CharBlock { start: 2036, length: 2, convRule: rule91 }
            , CharBlock { start: 2038, length: 1, convRule: rule13 }
@@ -1828,7 +1841,9 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 3218, length: 23, convRule: rule14 }
            , CharBlock { start: 3242, length: 10, convRule: rule14 }
            , CharBlock { start: 3253, length: 5, convRule: rule14 }
-           , CharBlock { start: 3260, length: 1, convRule: rule92 }
+           ]
+allChars6 :: Array CharBlock
+allChars6 = [ CharBlock { start: 3260, length: 1, convRule: rule92 }
            , CharBlock { start: 3261, length: 1, convRule: rule14 }
            , CharBlock { start: 3262, length: 1, convRule: rule124 }
            , CharBlock { start: 3263, length: 1, convRule: rule92 }
@@ -2028,7 +2043,10 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 5902, length: 4, convRule: rule14 }
            , CharBlock { start: 5906, length: 3, convRule: rule92 }
            , CharBlock { start: 5920, length: 18, convRule: rule14 }
-           , CharBlock { start: 5938, length: 3, convRule: rule92 }
+           ]
+
+allChars7 :: Array CharBlock
+allChars7 = [CharBlock { start: 5938, length: 3, convRule: rule92 }
            , CharBlock { start: 5941, length: 2, convRule: rule2 }
            , CharBlock { start: 5952, length: 18, convRule: rule14 }
            , CharBlock { start: 5970, length: 2, convRule: rule92 }
@@ -2227,7 +2245,10 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 7706, length: 1, convRule: rule22 }
            , CharBlock { start: 7707, length: 1, convRule: rule23 }
            , CharBlock { start: 7708, length: 1, convRule: rule22 }
-           , CharBlock { start: 7709, length: 1, convRule: rule23 }
+           ]
+
+allChars8 :: Array CharBlock
+allChars8 = [CharBlock { start: 7709, length: 1, convRule: rule23 }
            , CharBlock { start: 7710, length: 1, convRule: rule22 }
            , CharBlock { start: 7711, length: 1, convRule: rule23 }
            , CharBlock { start: 7712, length: 1, convRule: rule22 }
@@ -2427,7 +2448,10 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 7911, length: 1, convRule: rule23 }
            , CharBlock { start: 7912, length: 1, convRule: rule22 }
            , CharBlock { start: 7913, length: 1, convRule: rule23 }
-           , CharBlock { start: 7914, length: 1, convRule: rule22 }
+           ]
+
+allChars9 :: Array CharBlock
+allChars9 = [ CharBlock { start: 7914, length: 1, convRule: rule22 }
            , CharBlock { start: 7915, length: 1, convRule: rule23 }
            , CharBlock { start: 7916, length: 1, convRule: rule22 }
            , CharBlock { start: 7917, length: 1, convRule: rule23 }
@@ -2627,7 +2651,9 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 8579, length: 1, convRule: rule22 }
            , CharBlock { start: 8580, length: 1, convRule: rule23 }
            , CharBlock { start: 8581, length: 4, convRule: rule128 }
-           , CharBlock { start: 8585, length: 1, convRule: rule17 }
+           ]
+allChars10 :: Array CharBlock
+allChars10 =[CharBlock { start: 8585, length: 1, convRule: rule17 }
            , CharBlock { start: 8586, length: 2, convRule: rule13 }
            , CharBlock { start: 8592, length: 5, convRule: rule6 }
            , CharBlock { start: 8597, length: 5, convRule: rule13 }
@@ -3428,7 +3454,9 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 64112, length: 106, convRule: rule14 }
            , CharBlock { start: 64256, length: 7, convRule: rule20 }
            , CharBlock { start: 64275, length: 5, convRule: rule20 }
-           , CharBlock { start: 64285, length: 1, convRule: rule14 }
+           ]
+allChars11 :: Array CharBlock
+allChars11 = [ CharBlock { start: 64285, length: 1, convRule: rule14 }
            , CharBlock { start: 64286, length: 1, convRule: rule92 }
            , CharBlock { start: 64287, length: 10, convRule: rule14 }
            , CharBlock { start: 64297, length: 1, convRule: rule6 }
@@ -4027,7 +4055,9 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            , CharBlock { start: 119834, length: 26, convRule: rule20 }
            , CharBlock { start: 119860, length: 26, convRule: rule107 }
            , CharBlock { start: 119886, length: 7, convRule: rule20 }
-           , CharBlock { start: 119894, length: 18, convRule: rule20 }
+           ]
+allChars12 :: Array CharBlock
+allChars12 = [ CharBlock { start: 119894, length: 18, convRule: rule20 }
            , CharBlock { start: 119912, length: 26, convRule: rule107 }
            , CharBlock { start: 119938, length: 26, convRule: rule20 }
            , CharBlock { start: 119964, length: 1, convRule: rule107 }
@@ -4227,7 +4257,10 @@ allchars = [ CharBlock { start: 0, length: 32, convRule: rule0 }
            ]
 
 convchars :: Array CharBlock
-convchars = [ CharBlock { start: 65, length: 26, convRule: rule9 }
+convchars = convchars1 <> convchars2
+
+convchars1 :: Array CharBlock
+convchars1 = [ CharBlock { start: 65, length: 26, convRule: rule9 }
             , CharBlock { start: 97, length: 26, convRule: rule12 }
             , CharBlock { start: 181, length: 1, convRule: rule18 }
             , CharBlock { start: 192, length: 23, convRule: rule9 }
@@ -4859,7 +4892,9 @@ convchars = [ CharBlock { start: 65, length: 26, convRule: rule9 }
             , CharBlock { start: 4349, length: 3, convRule: rule126 }
             , CharBlock { start: 5024, length: 80, convRule: rule127 }
             , CharBlock { start: 5104, length: 6, convRule: rule104 }
-            , CharBlock { start: 5112, length: 6, convRule: rule110 }
+            ]
+convchars2 :: Array CharBlock
+convchars2 =[ CharBlock { start: 5112, length: 6, convRule: rule110 }
             , CharBlock { start: 7296, length: 1, convRule: rule129 }
             , CharBlock { start: 7297, length: 1, convRule: rule130 }
             , CharBlock { start: 7298, length: 1, convRule: rule131 }

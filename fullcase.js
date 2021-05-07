@@ -54,6 +54,18 @@ const lines = keys.map(code => data[code]).map(d =>
   `{ code: ${d.code}, lower: ${d.lower}, title: ${d.title}, upper: ${d.upper}, fold: ${d.fold}, foldFull: ${d.foldFull} }`
 );
 
+function chunkArray(myArray, chunk_size){
+    var results = [];
+
+    while (myArray.length) {
+        results.push(myArray.splice(0, chunk_size));
+    }
+
+    return results;
+}
+
+const fns = chunkArray(lines, 200);
+
 
 
 const file = `-----------------------------------------------------------
@@ -80,9 +92,9 @@ type CaseRec =
   }
 
 rules :: Array CaseRec
-rules = [
-  ${lines.join(",\n  ")}
-]
+rules = ${ fns.map((lines, i) => "rules" + i).join(" <> ") }
+
+${ fns.map( (lines, i) => "rules" + i + " :: Array CaseRec\nrules" + i + " = [" +  lines.join(",\n ") + "]\n").join("\n") }
 
 zeroRec :: Int -> CaseRec
 zeroRec code = { code, lower: [], title: [], upper: [], fold: 0, foldFull: [] }

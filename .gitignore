@@ -16,3 +16,5 @@ SpecialCasing.txt
 node_modules
 package-lock.json
 *.lock
+ebin
+erl_crash.dump
